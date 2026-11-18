@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.DS_Store
+# Keep large/private datasets and trained weights outside Git.
+datasets/raw/
+datasets/private/
+artifacts/
+checkpoints/
+weights/
+models/*.bin
+models/*.safetensors
+models/*.gguf
+wandb/
+mlruns/
+runs/

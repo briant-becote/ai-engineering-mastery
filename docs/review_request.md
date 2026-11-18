@@ -1,0 +1,5 @@
+# Reusable ChatGPT code-review request
+
+> Review my AI Engineering Mastery repository as an engineering mentor and skeptical code reviewer. Module: [XX], lesson or week: [YY], PR/commit: [URL / SHA]. Goal: [the exact behavior and concept I am trying to demonstrate]. Read the actual source, tests, README, and experimental output before commenting; if you cannot access them, tell me which files or ZIP are required. Evaluate conceptual correctness, architecture, tests, reproducibility, baseline/metrics, error analysis, safety and documentation using the weighted 100-point rubric. Cite file paths and lines; identify concrete bugs with reproducible failure cases. Return prioritized Critical/High/Medium/Low findings, 2–3 positive aspects, the three highest-value fixes, a small targeted next exercise, and an explicit Pass / Conditional / Remediation decision. Don't rewrite my code wholesale unless I request that: teach me to fix it.
+
+Use this at every 14-day checkpoint and for module mastery gates. A current ZIP or copied diff works if private repository access is unavailable.

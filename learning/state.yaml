@@ -1,0 +1,31 @@
+# Human-verified, version-controlled learning state. Not automatically synchronized with scheduled lessons.
+protocol_version: '1.0'
+curriculum_name: 'AI Engineering Mastery'
+start_date_local: '2026-11-19'
+timezone: 'America/Phoenix'
+calendar_lessons:
+  # Date-based automated lessons progress independently of mastery.
+  latest_received_day: null
+  latest_received_date: null
+mastery:
+  active_module: 'm01-orientation'
+  active_topic: 'AI taxonomy and reproducible experiments'
+  current_competency: 'not_started' # not_started | exploring | practicing | review_pending | revision_needed | verified
+  verified_completed_days: []
+  passed_module_gates: []
+  pending_gate: 'm01-orientation'
+code_evidence:
+  repository_url: null
+  working_branch: null
+  last_submitted_commit_sha: null
+  last_reviewed_commit_sha: null
+  last_review_date: null
+  last_review_outcome: 'not_reviewed'
+  test_command: 'python -m pytest -q'
+  last_verified_test_result: null
+next_actions:
+  - 'Create the GitHub repository from the starter code and establish a clean baseline.'
+  - 'Explore AI vs ML vs DL vs generative AI vs agentic systems, with examples.'
+open_questions: []
+updated_at_local: '2026-11-18'
+updated_by: 'initial_template'
