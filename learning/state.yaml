@@ -15,7 +15,7 @@ mastery:
   passed_module_gates: []
   pending_gate: 'm01-orientation'
 code_evidence:
-  repository_url: null
+  repository_url: 'https://github.com/briant-becote/ai-engineering-mastery'
   working_branch: null
   last_submitted_commit_sha: null
   last_reviewed_commit_sha: null
@@ -24,8 +24,8 @@ code_evidence:
   test_command: 'python -m pytest -q'
   last_verified_test_result: null
 next_actions:
-  - 'Create the GitHub repository from the starter code and establish a clean baseline.'
+  - 'Confirm a clean repository baseline, run initial tests and review CI without marking academic mastery.'
   - 'Explore AI vs ML vs DL vs generative AI vs agentic systems, with examples.'
 open_questions: []
 updated_at_local: '2026-11-18'
-updated_by: 'initial_template'
+updated_by: 'repository_reference_confirmation'

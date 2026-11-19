@@ -1,0 +1,582 @@
+status: active
+schema_version: 1
+approved_by_learner_on: '2026-11-18'
+source_of_truth: User-supplied expanded Udemy lecture outlines (Nov 18, 2026) and the 616-day workbook
+notes:
+- Only selected public-facing lecture titles/durations are referenced; paid lesson content remains in Udemy.
+- Calendar delivery days are not evidence of learner completion or mastery.
+- The probability course remains deferred; free academic alternatives are required when unavailable.
+- 'Instructor code archives contain .env files and notebook outputs: never copy those archives wholesale into a
+  public repository.'
+- Guided labs are approved curriculum additions; individual lessons remain subject to review and prerequisite readiness.
+- The workbook remains the roadmap; this YAML is the authoritative named-lecture and guided-lab supplement.
+course_catalog:
+  krohn:
+    title: Mathematical Foundations of Machine Learning
+    url: https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/
+    source_outline_file: Mathematical Foundations of Machine.txt
+    source_repository_url: https://github.com/jonkrohn/ML-foundations
+    published_size: 11 sections • 114 lectures • 16h 25m total length
+    access_status: enrollment_not_confirmed
+  probability:
+    title: 'Math 0-1: Probability for Data Science & Machine Learning'
+    url: https://www.udemy.com/course/probability-data-science-machine-learning/
+    source_outline_file: Math 0-1 Probability for Data Scien.txt
+    published_size: 14 sections • 132 lectures • 23h 35m total length
+    access_status: purchase_deferred
+  pytorch:
+    title: PyTorch for Deep Learning Bootcamp
+    url: https://www.udemy.com/course/pytorch-for-deep-learning/
+    source_outline_file: PyTorch for Deep Learning Bootcamp.txt
+    published_size: 14 sections • 358 lectures • 52h 13m total length
+    access_status: enrollment_not_confirmed
+  donner_core:
+    title: 'AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents'
+    url: https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/
+    source_outline_file: AI Engineer Core Track LLM Engineer.txt
+    source_repository_url: https://github.com/ed-donner/llm_engineering
+    published_size: 8 sections • 210 lectures • 33h 21m total length
+    access_status: enrollment_not_confirmed
+  eden_agent:
+    title: 'LangChain & LangGraph AI Engineer: Agents, Agentic RAG & MCP'
+    url: https://www.udemy.com/course/langchain/
+    source_outline_file: LangChain & LangGraph AI Engineer A.txt
+    source_repository_url: https://github.com/emarco177/langchain-course
+    published_size: 29 sections • 204 lectures • 20h 24m total length
+    access_status: enrollment_not_confirmed
+  donner_agent:
+    title: 'AI Engineer Agentic Track: The Complete Agent & MCP Course'
+    url: https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/
+    source_outline_file: AI Engineer Agentic Track The Compl(1).txt
+    source_repository_url: https://github.com/ed-donner/agents
+    published_size: 6 sections • 132 lectures • 20h 52m total length
+    access_status: enrollment_not_confirmed
+  donner_prod:
+    title: 'AI Engineer Production Track: Deploy LLMs & Agents at Scale'
+    url: https://www.udemy.com/course/generative-and-agentic-ai-in-production/
+    source_outline_file: AI Engineer Production Track Deploy.txt
+    source_repository_url: https://github.com/ed-donner/production
+    published_size: 4 sections • 124 lectures • 18h 40m total length
+    access_status: enrollment_not_confirmed
+  evals:
+    title: 'AI Agents, RAG & LLM Evals for Beginners: DeepEval & RAGAS'
+    url: https://www.udemy.com/course/ai-testing-deepeval-ragas-ollama
+    source_outline_file: AI Agents, RAG & LLM Evals for Begi.txt
+    published_size: 17 sections • 127 lectures • 14h 40m total length
+    access_status: enrollment_not_confirmed
+  security:
+    title: The Ultimate AI/LLM/ML Penetration Testing Training Course
+    url: https://www.udemy.com/course/the-ultimate-ai-llm-penetration-testing-training-course/
+    source_outline_file: The Ultimate AILLMML Penetration Te.txt
+    published_size: 49 sections • 605 lectures • 50h 28m total length
+    access_status: enrollment_not_confirmed
+guided_labs:
+- scheduled_day: 18
+  module: m02
+  resource_id: krohn
+  role: guided
+  course_lecture_references:
+  - lecture_title: Norms and Unit Vectors
+    duration: '14:37'
+  - lecture_title: The Dot Product
+    duration: '5:13'
+  independent_build_quest: Implement L1/L2 norms and cosine similarity in NumPy; compare to a library implementation.
+  github_evidence: projects/m02-linear-algebra/norms.py + tests
+- scheduled_day: 25
+  module: m02
+  resource_id: krohn
+  role: guided
+  course_lecture_references:
+  - lecture_title: Matrix Multiplication
+    duration: '24:28'
+  - lecture_title: Matrix Inversion
+    duration: '17:06'
+  independent_build_quest: Implement matrix multiplication and solve a small linear system; test dimensions and
+    singular cases.
+  github_evidence: projects/m02-linear-algebra/matrix_lab.py + tests
+- scheduled_day: 32
+  module: m02
+  resource_id: krohn
+  role: guided
+  course_lecture_references:
+  - lecture_title: Eigenvectors and Eigenvalues
+    duration: '26:13'
+  - lecture_title: Principal Component Analysis (PCA)
+    duration: '8:27'
+  independent_build_quest: Compute a two-dimensional PCA from eigenvectors and compare to sklearn.
+  github_evidence: projects/m02-linear-algebra/pca_from_scratch.py + experiment notes
+- scheduled_day: 39
+  module: m02
+  resource_id: krohn
+  role: guided
+  course_lecture_references:
+  - lecture_title: Singular Value Decomposition
+    duration: '10:49'
+  - lecture_title: Data Compression with SVD
+    duration: '10:59'
+  independent_build_quest: Truncate an SVD and plot reconstruction error versus rank.
+  github_evidence: projects/m02-linear-algebra/svd_compression.py + error plot
+- scheduled_day: 46
+  module: m02
+  resource_id: krohn
+  role: guided
+  course_lecture_references:
+  - lecture_title: Tensors
+    duration: '2:33'
+  - lecture_title: Basic Tensor Arithmetic, incl. the Hadamard Product
+    duration: '6:12'
+  independent_build_quest: Explain and verify 3D array shapes and broadcasting rules with examples.
+  github_evidence: projects/m02-linear-algebra/tensor_shapes.py + tests
+- scheduled_day: 53
+  module: m03
+  resource_id: krohn
+  role: guided
+  course_lecture_references:
+  - lecture_title: How Derivatives Arise from Limits
+    duration: '13:52'
+  independent_build_quest: Estimate derivatives by finite differences and compare with analytic derivatives.
+  github_evidence: projects/m03-calculus-optimization/finite_difference.py + test
+- scheduled_day: 60
+  module: m03
+  resource_id: krohn
+  role: guided
+  course_lecture_references:
+  - lecture_title: The Chain Rule for Partial Derivatives
+    duration: '9:16'
+  independent_build_quest: Write a numerical Jacobian and verify the chain rule on a toy network.
+  github_evidence: projects/m03-calculus-optimization/jacobian_check.py
+- scheduled_day: 67
+  module: m03
+  resource_id: krohn
+  role: guided
+  course_lecture_references:
+  - lecture_title: Descending the Gradient of Cost
+    duration: '12:52'
+  - lecture_title: The Gradient of Mean Squared Error
+    duration: '24:21'
+  independent_build_quest: Derive and code gradient descent; numerically check gradients.
+  github_evidence: projects/m03-calculus-optimization/gradient_descent.py + plots
+- scheduled_day: 74
+  module: m03
+  resource_id: krohn
+  role: guided
+  course_lecture_references:
+  - lecture_title: Higher-Order Partial Derivatives
+    duration: '11:53'
+  independent_build_quest: Explore Hessian curvature and condition number; supplement with free numerical optimization
+    readings.
+  github_evidence: projects/m03-calculus-optimization/conditioning_experiment.md
+  notes: Hessian conditioning needs supplemental material beyond the course outline.
+- scheduled_day: 81
+  module: m04
+  resource_id: probability
+  role: guided
+  course_lecture_references:
+  - lecture_title: Bayes' Rule
+    duration: '7:30'
+  - lecture_title: Conditional Probability
+    duration: '12:56'
+  independent_build_quest: Model a diagnostic test and compare analytic posterior probability to Monte Carlo.
+  github_evidence: projects/m04-probability-statistics/bayes_simulation.py
+  notes: Deferred purchase; substitute Harvard Stat 110 or free course material.
+- scheduled_day: 88
+  module: m04
+  resource_id: probability
+  role: guided
+  course_lecture_references:
+  - lecture_title: The Bernoulli Distribution
+    duration: '20:14'
+  - lecture_title: The Normal Distribution (Gaussian Distribution)
+    duration: '14:21'
+  independent_build_quest: Simulate Bernoulli, binomial and Gaussian variables; check moments and empirical frequencies.
+  github_evidence: projects/m04-probability-statistics/distributions_lab.py
+  notes: Deferred purchase; use free alternative when unavailable.
+- scheduled_day: 95
+  module: m04
+  resource_id: probability
+  role: guided
+  course_lecture_references:
+  - lecture_title: Central Limit Theorem
+    duration: '17:02'
+  - lecture_title: LLN and CLT in Python
+    duration: '17:21'
+  independent_build_quest: Visualize confidence intervals and bootstrap coverage through simulation.
+  github_evidence: projects/m04-probability-statistics/inference_bootstrap.py
+  notes: The supplied probability outline does not explicitly cover bootstrap or hypothesis tests; free ISLP / Stat
+    110 material required.
+- scheduled_day: 151
+  module: m06
+  resource_id: pytorch
+  role: guided
+  course_lecture_references:
+  - lecture_title: Introduction to PyTorch Tensors
+    duration: '13:24'
+  - lecture_title: Dealing With Tensor Data Types
+    duration: '9:24'
+  independent_build_quest: Build and check a minimal perceptron with correct tensor shapes.
+  github_evidence: projects/m06-deep-learning-pytorch/first_perceptron.py + tests
+- scheduled_day: 158
+  module: m06
+  resource_id: pytorch
+  role: guided
+  course_lecture_references:
+  - lecture_title: PyTorch Training Loop Steps and Intuition
+    duration: '13:53'
+  independent_build_quest: Implement two-layer backpropagation in NumPy first; compare gradients with torch.autograd.
+  github_evidence: projects/m06-deep-learning-pytorch/backprop_numpy.py + torch_check.py
+  notes: For from-scratch backpropagation use Karpathy / D2L as primary; the Udemy lab reinforces framework fluency.
+- scheduled_day: 165
+  module: m06
+  resource_id: pytorch
+  role: guided
+  course_lecture_references:
+  - lecture_title: Writing Code for a PyTorch Training Loop
+    duration: '8:46'
+  - lecture_title: Writing Testing Loop Code and Discussing What's Happening Step by Step
+    duration: '11:37'
+  independent_build_quest: Create a deterministic training and validation loop with checkpoint loading tests.
+  github_evidence: projects/m06-deep-learning-pytorch/train.py + test_training.py
+- scheduled_day: 172
+  module: m06
+  resource_id: pytorch
+  role: guided
+  course_lecture_references:
+  - lecture_title: The Balance Between Overfitting and Underfitting and How to Deal With Each
+    duration: '14:13'
+  independent_build_quest: Perform an ablation on capacity/data augmentation and compare validation curves.
+  github_evidence: projects/m06-deep-learning-pytorch/regularization_ablation.md
+  notes: Additional focused resources are needed for optimizer and normalization theory.
+- scheduled_day: 179
+  module: m06
+  resource_id: pytorch
+  role: guided
+  course_lecture_references:
+  - lecture_title: Different Kinds of Transfer Learning
+    duration: '7:10'
+  - lecture_title: Freezing the Base Layers of Our Model and Updating the Classifier Head
+    duration: '13:26'
+  independent_build_quest: Implement frozen-backbone versus fine-tuned comparisons.
+  github_evidence: projects/m06-deep-learning-pytorch/transfer_learning_comparison.md
+- scheduled_day: 186
+  module: m06
+  resource_id: pytorch
+  role: guided
+  course_lecture_references:
+  - lecture_title: What Is Experiment Tracking and Why Track Experiments
+    duration: '7:06'
+  - lecture_title: Setting Up a Way to Track a Single Model Experiment with TensorBoard
+    duration: '13:35'
+  independent_build_quest: Save experiment parameters, seed, evaluation metrics and model cards; compare two runs.
+  github_evidence: projects/m06-deep-learning-pytorch/experiments/ + model_card.md
+- scheduled_day: 193
+  module: m07
+  resource_id: pytorch
+  role: guided
+  course_lecture_references:
+  - lecture_title: 'Model 2: Coding Our First Convolutional Neural Network with PyTorch'
+    duration: '19:48'
+  independent_build_quest: Build a CNN and test tensor shapes across convolution/pooling layers.
+  github_evidence: projects/m07-computer-vision/cnn_baseline.py + tests
+  notes: Supplemental; MIT 6.S191 remains the planned primary course.
+- scheduled_day: 207
+  module: m07
+  resource_id: pytorch
+  role: guided
+  course_lecture_references:
+  - lecture_title: Replicating a Vision Transformer - High Level Overview
+    duration: '9:53'
+  - lecture_title: Turning Equation 2 into Code
+    duration: '14:33'
+  independent_build_quest: Replicate a small ViT block, compare against a pretrained vision model, and report compute/performance.
+  github_evidence: projects/m07-computer-vision/vit_replication.md
+  notes: Supplemental; tutorial is not independent proof of paper replication.
+- scheduled_day: 333
+  module: m11
+  resource_id: donner_core
+  role: guided
+  course_lecture_references:
+  - lecture_title: Day 2 - Preparing Your Dataset for Fine-Tuning with Token Limits
+    duration: '10:35'
+  independent_build_quest: Audit an SFT dataset for split leakage, labeling integrity and token-length distribution.
+  github_evidence: projects/m11-fine-tuning-alignment/dataset_audit.md
+- scheduled_day: 340
+  module: m11
+  resource_id: donner_core
+  role: guided
+  course_lecture_references:
+  - lecture_title: 'Day 1 - LoRA: Training LLaMA 3.2 with Low-Rank Adapters'
+    duration: '8:31'
+  - lecture_title: Day 1 - LoRA Parameter Calculations and Model Size on Hugging Face
+    duration: '8:42'
+  independent_build_quest: Implement a LoRA layer mathematically, count trainable parameters, then reproduce a controlled
+    finetuning comparison.
+  github_evidence: projects/m11-fine-tuning-alignment/lora_from_scratch.py + comparison.md
+- scheduled_day: 347
+  module: m11
+  resource_id: donner_core
+  role: guided
+  course_lecture_references:
+  - lecture_title: Day 4 - Monitoring Your Fine-Tuning Run with Weights & Biases
+    duration: '10:39'
+  - lecture_title: Day 4 - Analyzing Weights & Biases Results and Catching Overfitting
+    duration: '10:31'
+  independent_build_quest: Compare training and validation curves for early stopping and overfitting.
+  github_evidence: projects/m11-fine-tuning-alignment/experiment_report.md
+- scheduled_day: 361
+  module: m12
+  resource_id: donner_core
+  role: guided
+  course_lecture_references:
+  - lecture_title: 'Day 1 - Introduction to RAG: Retrieval Augmented Generation Fundamentals'
+    duration: '9:15'
+  - lecture_title: 'Day 1 - Building a Simple RAG System: Dictionary Lookup and Context Retrieval'
+    duration: '9:15'
+  independent_build_quest: Build a dictionary/BM25 baseline before embeddings; track retrieval metrics.
+  github_evidence: projects/m12-retrieval-rag/retrieval_baseline.py + tests
+  notes: Supplemental; LLM Zoomcamp remains primary.
+- scheduled_day: 375
+  module: m12
+  resource_id: donner_core
+  role: guided
+  course_lecture_references:
+  - lecture_title: 'Day 4 - Evaluating RAG Systems: MRR, NDCG, and Test Data with Pydantic'
+    duration: '10:32'
+  - lecture_title: Day 4 - Experimenting with Chunking Strategies and Embedding Models in RAG
+    duration: '9:48'
+  independent_build_quest: Compare chunking and embedding choices with a fixed evaluation set.
+  github_evidence: projects/m12-retrieval-rag/retrieval_experiment.md
+  notes: Supplemental; compare to established offline retrieval metrics.
+- scheduled_day: 389
+  module: m13
+  resource_id: eden_agent
+  role: guided
+  course_lecture_references:
+  - lecture_title: Building a ReAct Agent Loop with the Raw Ollama SDK
+    duration: '7:41'
+  independent_build_quest: Build a small tool-calling loop with explicit schema validation and termination limits.
+  github_evidence: projects/m13-agents-mcp/re_act_loop.py + tests
+- scheduled_day: 396
+  module: m13
+  resource_id: donner_agent
+  role: supplemental
+  course_lecture_references:
+  - lecture_title: 'Day 4 - Build the Agent Loop From Scratch: Tool Calling with a While Loop'
+    duration: '16:07'
+  independent_build_quest: Implement the same task without a framework and compare behaviors and failure handling.
+  github_evidence: projects/m13-agents-mcp/framework_comparison.md
+  notes: Secondary lab; compare raw loop and graph orchestration.
+- scheduled_day: 396
+  module: m13
+  resource_id: eden_agent
+  role: guided
+  course_lecture_references:
+  - lecture_title: Building Our LangGraph Graph
+    duration: '11:54'
+  - lecture_title: Tracing Our Graph
+    duration: '7:22'
+  independent_build_quest: Implement a stateful agent workflow and record reproducible traces.
+  github_evidence: projects/m13-agents-mcp/langgraph_workflow.py + trace_summary.md
+- scheduled_day: 398
+  module: m13
+  resource_id: donner_agent
+  role: supplemental
+  course_lecture_references:
+  - lecture_title: 'Day 2 - Orchestrate Multiple Sales Agents by Code with asyncio.gather'
+    duration: '12:12'
+  - lecture_title: 'Day 2 - Orchestrate Agents with Handoffs in the OpenAI Agents SDK'
+    duration: '10:28'
+  independent_build_quest: Compare explicit async code orchestration, agent handoffs, and a LangGraph implementation on the same bounded task using deterministic mocks.
+  github_evidence: projects/m13-agents-mcp/agent_orchestration_comparison.md + tests
+  notes: Supplemental comparison after original agent loop; evaluate state, traces, tool permissions and termination.
+- scheduled_day: 403
+  module: m13
+  resource_id: eden_agent
+  role: guided
+  course_lecture_references:
+  - lecture_title: Building a Relevance Filter for RAG using LangChain's Structured Output
+    duration: '12:53'
+  - lecture_title: Building and Running the Complete LangGraph Agent
+    duration: '7:40'
+  independent_build_quest: Implement an agentic RAG branch with a relevance gate and error handling.
+  github_evidence: projects/m13-agents-mcp/agentic_rag_evaluation.md
+- scheduled_day: 410
+  module: m13
+  resource_id: eden_agent
+  role: guided
+  course_lecture_references:
+  - lecture_title: '[Theory] MCP Architecture'
+    duration: '7:20'
+  - lecture_title: Simple MCP Server
+    duration: '2:42'
+  independent_build_quest: Build a restricted read-only MCP server/client with schema checks.
+  github_evidence: projects/m13-agents-mcp/mcp_server.py + tests
+- scheduled_day: 417
+  module: m13
+  resource_id: donner_agent
+  role: supplemental
+  course_lecture_references:
+  - lecture_title: 'Day 2 - MCP Recap: Core Concepts Before Building Your Own MCP Server'
+    duration: '7:16'
+  - lecture_title: Day 2 - MCP Marketplaces and Building an MCP Server with FastMCP
+    duration: '9:35'
+  independent_build_quest: Build a comparable service using FastMCP; contrast protocols and permission boundaries.
+  github_evidence: projects/m13-agents-mcp/mcp_comparison.md
+- scheduled_day: 417
+  module: m13
+  resource_id: eden_agent
+  role: guided
+  course_lecture_references:
+  - lecture_title: 'Middleware Usecases: Security & Reliability'
+    duration: '3:43'
+  - lecture_title: Skill & MCP Security Introduction
+    duration: '3:53'
+  independent_build_quest: Construct negative tests for excessive tool privileges and untrusted tool responses.
+  github_evidence: projects/m13-agents-mcp/agent_security_tests.py
+- scheduled_day: 419
+  module: m13
+  resource_id: donner_agent
+  role: supplemental
+  course_lecture_references:
+  - lecture_title: 'Day 5 - Add Observability, Evaluation and Feedback to AI Traders'
+    duration: '6:24'
+  - lecture_title: 'Day 5 - Choosing an Agent Framework and 10 Things That Really Matter'
+    duration: '9:08'
+  independent_build_quest: Evaluate two agent frameworks on the same multi-agent task and compare trace completeness, failure recovery, tool controls and testability.
+  github_evidence: projects/m13-agents-mcp/multiagent_comparison.md + evaluation tests
+  notes: Prefer mock data and no actual trading; use fixed task cases and cost/latency measurements.
+- scheduled_day: 487
+  module: m16
+  resource_id: donner_prod
+  role: guided
+  course_lecture_references:
+  - lecture_title: Day 2 - Building Your First FastAPI Backend for Production LLM Deployment
+    duration: '9:13'
+  - lecture_title: Day 5 - Containerizing AI Apps with Docker for Cloud Deployment
+    duration: '10:08'
+  independent_build_quest: Containerize a simple inference service with health endpoints and safe configuration.
+  github_evidence: projects/m16-mlops-serving/fastapi_service/ + Dockerfile
+- scheduled_day: 494
+  module: m16
+  resource_id: donner_prod
+  role: guided
+  course_lecture_references:
+  - lecture_title: 'Day 4 - Infrastructure as Code for AI: Deploying LLM Apps with Terraform'
+    duration: '12:34'
+  - lecture_title: Day 5 - Setting Up GitHub Actions for Automated AI Model Deployment
+    duration: '9:50'
+  independent_build_quest: Write infrastructure plans as code; inspect changes and avoid unintended cloud costs.
+  github_evidence: projects/m16-mlops-serving/infra/ + workflow_notes.md
+- scheduled_day: 501
+  module: m16
+  resource_id: donner_prod
+  role: guided
+  course_lecture_references:
+  - lecture_title: Day 1 - Deploying AI Apps to Azure with Terraform Infrastructure as Code
+    duration: '10:15'
+  - lecture_title: Day 2 - Deploying AI Agents to GCP Cloud Run with Terraform Infrastructure
+    duration: '7:24'
+  independent_build_quest: Compare two deployment approaches via architecture, constraints, IaC and cost estimates.
+  github_evidence: projects/m16-mlops-serving/cloud_architecture_comparison.md
+  notes: Cloud-account costs must be estimated and approved before deployment.
+- scheduled_day: 508
+  module: m16
+  resource_id: donner_prod
+  role: guided
+  course_lecture_references:
+  - lecture_title: Day 4 - Monitoring AI Agents in Production with CloudWatch and Dashboards
+    duration: '12:07'
+  - lecture_title: Day 4 - Advanced LLM Observability with Langfuse and Production Guardrails
+    duration: '10:02'
+  independent_build_quest: Define SLOs and instrument latency, tool errors, requests, and failure traces.
+  github_evidence: projects/m16-mlops-serving/observability_plan.md
+- scheduled_day: 522
+  module: m17
+  resource_id: evals
+  role: guided
+  course_lecture_references:
+  - lecture_title: 'Your First DeepEval Test: Measuring Answer Relevance in Under 10 Minutes'
+    duration: '7:47'
+  - lecture_title: How to Build & Use a Golden Dataset for Reliable LLM Evaluation
+    duration: '7:52'
+  independent_build_quest: Create a hand-audited set of golden questions; compare lexical versus LLM-judge metrics.
+  github_evidence: projects/m17-evaluation/goldens.jsonl + test_eval.py
+- scheduled_day: 529
+  module: m17
+  resource_id: evals
+  role: guided
+  course_lecture_references:
+  - lecture_title: Measuring Context Recall with RAGAs & a Local LLM
+    duration: '9:27'
+  - lecture_title: 'Running the Full RAGAs Evaluation: Faithfulness, Recall, F1 & More'
+    duration: '4:37'
+  independent_build_quest: Evaluate retrieval versus answer quality and inspect disagreement cases.
+  github_evidence: projects/m17-evaluation/ragas_analysis.md
+- scheduled_day: 536
+  module: m17
+  resource_id: evals
+  role: guided
+  course_lecture_references:
+  - lecture_title: 'From Jupyter Notebook to PyTest: Migrating Your AI Evaluation Tests'
+    duration: '10:05'
+  - lecture_title: Setting Up Python, DeepEval & Jupyter for AI Testing
+    duration: '8:41'
+  independent_build_quest: Build a pytest-based AI evaluation suite using the provided course example as reference,
+    not copied into public code.
+  github_evidence: projects/m17-evaluation/test_regression.py + conftest.py
+- scheduled_day: 543
+  module: m17
+  resource_id: evals
+  role: guided
+  course_lecture_references:
+  - lecture_title: 'Full Agent Tracing: Verifying Which Tool Gets Invoked & Why'
+    duration: '6:43'
+  - lecture_title: Scoring Your Agent's Tool Choices with ToolCorrectness Metrics
+    duration: '6:43'
+  independent_build_quest: Trace tool invocation, evaluate expected tools, and document error patterns.
+  github_evidence: projects/m17-evaluation/agent_trace_eval.md
+- scheduled_day: 550
+  module: m18
+  resource_id: security
+  role: guided
+  course_lecture_references:
+  - lecture_title: 1. AI Red Teaming Methodology - Reconnaissance
+    duration: '8:08'
+  - lecture_title: 6. AI Red Teaming Methodology - Indirect Prompt Injection
+    duration: '4:01'
+  independent_build_quest: Threat-model a sandboxed assistant; execute approved toy attacks and log detection outcomes.
+  github_evidence: projects/m18-security-governance/threat_model.md + case_notes.md
+- scheduled_day: 557
+  module: m18
+  resource_id: security
+  role: guided
+  course_lecture_references:
+  - lecture_title: OWASP Top 10 - Supply Chain
+    duration: '8:58'
+  - lecture_title: Model and Training Data Poisoning - Theory
+    duration: '11:06'
+  independent_build_quest: Document provenance, demonstrate a toy poisoned-data case safely, and test containment.
+  github_evidence: projects/m18-security-governance/data_integrity_lab.md
+- scheduled_day: 564
+  module: m18
+  resource_id: security
+  role: guided
+  course_lecture_references:
+  - lecture_title: MCP Server Path Traversal Vulnerability
+    duration: '4:08'
+  - lecture_title: Challenge 03 Hidden Instructions in Tool Responses
+    duration: '4:10'
+  independent_build_quest: Reproduce a harmless local boundary-validation failure and add a regression test.
+  github_evidence: projects/m18-security-governance/mcp_boundary_tests.py
+  notes: Only run in isolated local/authorized lab; no real targets.
+- scheduled_day: 571
+  module: m18
+  resource_id: security
+  role: guided
+  course_lecture_references:
+  - lecture_title: Garak Tool Demo
+    duration: '12:13'
+  - lecture_title: Promptmap Tool Demo
+    duration: '7:00'
+  independent_build_quest: Compare two defensive test methods and document precision, recall and limitations on
+    a toy app.
+  github_evidence: projects/m18-security-governance/red_team_report.md
