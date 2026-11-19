@@ -29,5 +29,12 @@ def test_duplicate_day_detected():
 def test_daily_brief_is_transparent_about_evidence():
     brief = render(STATE, "2026-11-18")
     assert "not reviewed" in brief
-    assert "not configured" in brief
+    expected_repository = STATE["code_evidence"].get("repository_url") or "not configured"
+    assert f"- Repository: {expected_repository}" in brief
     assert "not independent code verification" in brief
+
+    # Also verify the missing-URL fallback without altering the real learning state.
+    unconfigured_state = copy.deepcopy(STATE)
+    unconfigured_state["code_evidence"]["repository_url"] = None
+    fallback_brief = render(unconfigured_state, "2026-11-18")
+    assert "- Repository: not configured" in fallback_brief
