@@ -13,13 +13,12 @@
 - Module gates passed: none
 
 ## GitHub evidence
-- Repository: not configured
+- Repository: https://github.com/briant-becote/ai-engineering-mastery
 - Last reviewed commit: not reviewed
 - Review outcome: not_reviewed
 - Last verified test result: not recorded
 
 ## Next agreed actions
-- Create the GitHub repository from the starter code and establish a clean baseline.
 - Explore AI vs ML vs DL vs generative AI vs agentic systems, with examples.
 
 ## Open questions
