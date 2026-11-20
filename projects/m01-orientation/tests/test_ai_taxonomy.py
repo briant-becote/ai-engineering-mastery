@@ -13,6 +13,7 @@ Your mission is to create a defensible taxonomy of six real or hypothetical syst
 
 from ai_taxonomy import SoftwareSystem
 
+
 def test_symbolic_ai():
     chess_master = SoftwareSystem("ChessMaster", "symbolic AI")
     assert chess_master.AI_classifications == {"AI"}
