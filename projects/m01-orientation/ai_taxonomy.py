@@ -3,6 +3,7 @@
 """
 This script was developed as a product of the AI Engineering Master Course developed by ChatGPT and Dr. Briant Becote
 Prompt: 
+Day 001
 Python mini-lab: build a taxonomy classifier
 Your mission is to create a defensible taxonomy of six real or hypothetical systems and put the first original implementation into GitHub.
 - Build the classifier
