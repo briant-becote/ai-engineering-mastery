@@ -20,4 +20,4 @@ def test_symbolic_ai():
 
 def test_trained_on_data():
     agentic_AI = {"uses_deep_network":True, "autonomous_actions":True}
-    assert classify(agentic_AI) == {"DL", "Agentic"}
+    assert classify(agentic_AI) == {"AI", "ML", "DL", "Agentic"}
