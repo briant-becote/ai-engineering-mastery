@@ -5,8 +5,8 @@ start_date_local: '2026-11-19'
 timezone: 'America/Phoenix'
 calendar_lessons:
   # Date-based automated lessons progress independently of mastery.
-  latest_received_day: 1
-  latest_received_date: '2026-11-19'
+  latest_received_day: 003
+  latest_received_date: '2026-11-21'
 mastery:
   active_module: 'm01-orientation'
   active_topic: 'AI taxonomy and reproducible experiments'
@@ -16,7 +16,7 @@ mastery:
   pending_gate: 'm01-orientation'
 code_evidence:
   repository_url: 'https://github.com/briant-becote/ai-engineering-mastery'
-  working_branch: null
+  working_branch: 'main'
   last_submitted_commit_sha: '27cfd6384a8066d9ea998c4d4a2039a08a44221a'
   last_reviewed_commit_sha: null
   last_review_date: null
@@ -27,5 +27,5 @@ next_actions:
   - 'Confirm a clean repository baseline, run initial tests and review CI without marking academic mastery.'
   - 'Explore AI vs ML vs DL vs generative AI vs agentic systems, with examples.'
 open_questions: []
-updated_at_local: '2026-11-18'
+updated_at_local: '2026-11-21'
 updated_by: 'repository_reference_confirmation'
